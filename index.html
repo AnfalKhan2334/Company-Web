@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./pics/pic2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Radiant Energy solutions</title>
+    <style>
+
+#contactus {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+    }
+
+    h1, h2, h6 {
+        margin: 10px 0;
+        color: #2C3E50;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .social-icons a img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        background-color: #1abc9c;
+        transform: translateY(-5px);
+    }
+
+    .social-icons a:hover img {
+        transform: scale(1.2);
+    }
+
+    /* Optional: Add media queries for responsiveness */
+    /* @media (max-width: 768px) {
+        .social-icons a {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+        }
+    } */
+            #gallery {
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        color: #2C3E50;
+        padding-bottom: 20px;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .gallery-item {
+        width: 30%;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures equal width and height */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .gallery-item:hover {
+        border: 2px solid #2C3E50; 
+        background-color: #e0e0e0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    }
+
+    .gallery-item:hover img {
+        
+        transform: scale(1.1);
+        filter: blur(1px); /* Blur effect on hover */
+    }
+
+    /* @media (max-width: 768px) {
+        .gallery-item {
+            width: 48%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .gallery-item {
+            width: 100%;
+        }
+    } */
+
+
+#ourservices3 li:hover {
+    border: 2px solid #2C3E50; 
+        background-color: #3498db; /* Change background color on hover */
+        color: white; /* Change text color */
+        transform: scale(1.1);/* Subtle upward movement */
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+    }
+            .image {
+        transition: all 0.3s ease;
+        border: 2px solid transparent; /* Initial border */
+        padding: 5px; /* Padding to make space for the border */
+        background-color: #f5f5f5; /* Light background */
+    }
+
+    .image:hover {
+        border: 2px solid #2C3E50;  /* Blue border on hover */
+        background-color: #ecf0f1; /* Slightly darker background on hover */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+        
+    #casestudies2 {
+        border: 2px solid transparent;
+        background-color: #f5f5f5;
+        transition: all 0.3s ease;
+    }
+
+    #casestudies2:hover {
+        border: 2px solid #2C3E50; /* Dark border color on hover */
+        background-color: #e8e8e8; /* Slightly darker background */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    }
+
+    #casestudies2 img {
+        display: block;
+        margin: 0 auto 10px;
+        transition: transform 0.3s ease;
+    }
+
+    #casestudies2:hover img {
+        transform: scale(1.1); /* Slight image zoom effect on hover */
+    }
+
+    h3, p {
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+      
+       
+        header img {
+           
+            width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            padding-right: 60px;
+            color: darkolivegreen;
+            text-decoration: none;
+            font-size: 22px;
+            transition: color 0.3s ease;
+            /* padding-bottom: 150px; */
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+            background-color: #333;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px 0;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        
+        /* @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                text-align: left;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header img {
+                width: 40px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+
+            form input,
+            form textarea {
+                padding: 8px;
+            }
+
+            form button {
+                padding: 8px 18px;
+            }
+        } */
+        @media screen and (max-width: 1024px) {
+            header {
+            padding: 15px;
+        }
+
+        header img {
+            height: 40px; /* Reduce logo size on medium screens */
+        }
+
+        nav ul {
+            gap: 15px; /* Reduce gap between navigation items */
+        }
+        .gallery-container {
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+        }
+        h1, h2, h6 {
+            font-size: 30px; /* Adjust font size for tablets */
+        }
+
+        .social-icons a img {
+            width: 35px;
+            height: 35px; /* Adjust icon size for tablets */
+        }
+        #casestudies h1 {
+            font-size: 40px;
+        }
+
+        #imgg {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+        @media screen and (max-width: 768px) {
+            header {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        header img {
+            width: 30px;
+            height: 30px; /* Further reduce logo size for small screens */
+        }
+
+        nav ul {
+            flex-direction: column;
+            gap: 10px; /* Stack navigation items vertically */
+            align-items: flex-start;
+        }
+
+        #home div {
+            font-size: 24px;
+            padding: 15px;
+        }
+        #aboutus h1:first-child {
+            font-size: 40px;
+            padding-left: 100px;
+        }
+
+        #aboutus h1:nth-child(2) {
+            font-size: 25px;
+        }
+
+        #aboutus p {
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #casestudies2 {
+            width: 45%;  /* Adjust to fit two items per row */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 50px; /* Adjust header size for tablets */
+            padding-left: 50px;
+        }
+
+        .image {
+            width: 250px; /* Resize images for smaller screens */
+            height: 250px;
+        }
+
+        p {
+            font-size: 18px; /* Adjust text size for readability on smaller screens */
+        }
+
+        /* Stack the images in a row */
+        div {
+            display: block;
+            text-align: center;
+        }
+
+        div img {
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 40px; /* Adjust header size for tablets */
+        }
+
+        ul {
+            grid-template-columns: 1fr 1fr; /* Keep two columns for tablets */
+        }
+
+        li {
+            font-size: 16px; /* Adjust font size for readability */
+            padding: 15px; /* Increase padding for touch devices */
+        }
+        .gallery-container {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller tablets */
+        }
+        h1, h2, h6 {
+            font-size: 25px; /* Adjust font size for smaller tablets */
+        }
+
+        .social-icons {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px; /* Adjust icon size for smaller tablets */
+        }
+        #casestudies h1 {
+            font-size: 30px;
+            padding-left: 0;
+        }
+
+        #casestudies p {
+            font-size: 18px;
+        }
+
+        #imgg {
+            width: 250px;
+            height: 250px;
+        }
+
+        /* Stack images vertically on smaller screens */
+        #casestudies div {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+    
+    }
+
+    @media screen and (max-width: 480px) {
+        header {
+            padding: 5px;
+        }
+
+        header img {
+            width: 25px;
+            height: 25px; /* Very small logo for mobile */
+        }
+
+        nav ul {
+            gap: 8px; /* Reduce gap for very small screens */
+        }
+
+        #home div {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        #home h1 {
+            font-size: 22px; /* Adjust the header size for small screens */
+        }
+        #aboutus h1:first-child {
+            font-size: 30px;
+            padding-left: 50px;
+        }
+
+        #aboutus h1:nth-child(2) {
+            font-size: 22px;
+        }
+
+        #aboutus p {
+            font-size: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #casestudies2 {
+            width: 100%;  /* Stack all items vertically on small screens */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 30px; /* Smaller header size for mobile devices */
+            padding-left: 20px;
+        }
+
+        .image {
+            width: 200px; /* Resize images further for mobile */
+            height: 200px;
+        }
+
+        p {
+            font-size: 16px; /* Further adjust text for mobile devices */
+        }
+
+        div {
+            display: block;
+            text-align: center;
+        }
+
+        div img {
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 30px; /* Smaller header size for mobile */
+        }
+
+        ul {
+            grid-template-columns: 1fr; /* Stack the list items on mobile */
+        }
+
+        li {
+            font-size: 14px; /* Further adjust font size for mobile */
+            padding: 12px; /* Increase padding for mobile */
+        }
+        .gallery-container {
+            grid-template-columns: 1fr; /* Single column for mobile */
+        }
+        h1, h2, h6 {
+            font-size: 20px; /* Adjust font size for mobile */
+        }
+
+        .social-icons {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-icons a img {
+            width: 25px;
+            height: 25px; /* Adjust icon size for mobile */
+        }
+        #casestudies h1 {
+            font-size: 24px;
+            padding-left: 0;
+        }
+
+        #casestudies p {
+            font-size: 16px;
+        }
+
+        #imgg {
+            width: 200px;
+            height: 200px;
+        }
+
+
+
+    }
+    
+</style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./pics/fullpic.png" alt="Eco4 Logo"> 
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#ourservices3">Our Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" style="position: relative; text-align: center;">
+        <video autoplay muted loop style="width: 80%; height: auto;">
+            <source src="./pics/eco4.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 30px; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+            <h1>Welcome to Eco Radiant Energy solutions</h1>
+           
+        </div>
+    </section>
+    
+    
+
+    <section id="aboutus">
+        <h1 style="font-size: 50px; padding-left: 150px; font-family: 'Arial', sans-serif; font-weight: bold; color: #2C3E50; text-align: center;">
+            About Us
+        </h1>
+        <h1 style="font-size: 30px; font-family: 'Arial', sans-serif; font-weight: bold; color: #2C3E50; ">A Brief Overview</h1>
+        <p style="justify-content: center; font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">We specialize in the installation of heating and insulation solutions, providing <br> assistance to homeowners through various programs over the past 8. <br> As a trusted and professional installer, we hold all the necessary <br> certifications to ensure quality service. Most of our installations <br> undergo independent checks upon completion, <br> offering you peace of mind. Our work is carried out <br> exclusively by our in-house team of skilled surveyors <br> and engineers, ensuring top-notch service and expertise</p>
+    </section>
+
+    <!-- ICONS -->
+
+    <section style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <section id="casestudies2" style="width: 300px; margin-bottom: 20px;">
+            <img src="./icons/icon1.png">
+            <h3>We work up to your satisfaction</h3>
+            <p>The Green Deal may be right for <br> you if you think your property <br> could benefit from energy-saving <br> improvements</p>
+        </section>
+        
+        <section id="casestudies2" style="width: 300px; margin-bottom: 20px;">
+            <img src="./icons/icon3.png">
+            <h3>Maintenance services</h3>
+            <p>The Green Deal helps you make energy- <br> saving improvements to your home and find <br> the best way to pay for them.</p>
+        </section>
+        
+        <section id="casestudies2" style="width: 300px; margin-bottom: 20px;">
+            <img src="./icons/icon2.png">
+            <h3>Contact US</h3>
+            <p>Please Call Us:</p>
+            <p>MOB: +44-7473564355</p>
+            <p>Whatsapp: +44-7473564355</p>
+        </section>
+    </section>
+        
+
+    <!-- Icons End -->
+<!-- commitment -->
+<section id="casestudies">
+    <h1 style="font-size: 50px; padding-left: 150px; color: black; text-align: center;">
+        Our commitment
+    </h1>
+    <h1 style="font-size: 70px; padding-left: 150px; font-family: 'Arial', sans-serif; font-weight: bold; color:rgba(18, 228, 39, 0.952); text-align: center;">
+        Provide best service
+    </h1>
+    <p style="font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">
+        We aim to build a lasting relationship of trust with you, ensuring your satisfaction. <br>
+        Client satisfaction, respect, and health and safety are our top priorities. <br>
+        That's why you should never have to reach out for information—we'll always be proactive in keeping you informed. <br>
+        We also ask that you extend this same respect to us. We only make promises that we can realistically fulfill, and we strive to provide you with clear and concise information. <br>
+        Our team members will always carry proper identification, and our staff and contractors are fully committed to their responsibilities to both you and the standards we've outlined.
+    </p>
+    
+    <!-- Container for images -->
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <img src="./pics/commitment1.jpg" class="image" style="width: 350px; height: 350px;" id="imgg" >
+        <img src="./pics/commitment3.avif" class="image" style="width: 350px; height: 350px;" id="imgg">
+        <img src="./pics/commitment2.jpg" class="image" style="width: 350px; height: 350px;" id="imgg">
+    </div>
+</section>
+
+<!-- commitment End -->
+<!-- our services -->
+
+<section id="ourservices3">
+    <h1 style="font-size: 50px; padding-left: 20px; font-family: 'Arial', sans-serif; font-weight: bold; color: #2C3E50; text-align: center; margin-bottom: 40px;">
+        OUR SERVICES
+    </h1>
+    
+    <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
+        <li style="font-size: 18px; font-family: 'Arial', sans-serif; font-weight: 500; color: #34495E; padding: 10px; background-color: #ecf0f1; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+            <strong>External Wall Insulation</strong>
+        </li>
+        <li style="font-size: 18px; font-family: 'Arial', sans-serif; font-weight: 500; color: #34495E; padding: 10px; background-color: #ecf0f1; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+            <strong>Flat Roof Insulations</strong>
+        </li>
+        <li style="font-size: 18px; font-family: 'Arial', sans-serif; font-weight: 500; color: #34495E; padding: 10px; background-color: #ecf0f1; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+            <strong>Boiler Upgrade</strong>
+        </li>
+        <li style="font-size: 18px; font-family: 'Arial', sans-serif; font-weight: 500; color: #34495E; padding: 10px; background-color: #ecf0f1; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+            <strong>First Time Central Heating</strong>
+        </li>
+        <li style="font-size: 18px; font-family: 'Arial', sans-serif; font-weight: 500; color: #34495E; padding: 10px; background-color: #ecf0f1; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+            <strong>Room In Roof Insulation</strong>
+        </li>
+        <li style="font-size: 18px; font-family: 'Arial', sans-serif; font-weight: 500; color: #34495E; padding: 10px; background-color: #ecf0f1; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+            <strong>Loft Insulation</strong>
+        </li>
+        <li style="font-size: 18px; font-family: 'Arial', sans-serif; font-weight: 500; color: #34495E; padding: 10px; background-color: #ecf0f1; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+            <strong>Pitched Roof Insulation</strong>
+        </li>
+    </ul>
+</section>
+
+
+    <!-- our service end -->
+
+
+
+
+<!-- gallery -->
+<section id="gallery">
+    <h1 style="font-size: 50px; padding-left: 150px; font-family: 'Arial', sans-serif; font-weight: bold; color: #2C3E50; text-align: center;">
+        Gallery
+    </h1>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-01.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-02.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-03.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-04.jpg" alt="Gallery Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-05.jpg" alt="Gallery Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-06.jpg" alt="Gallery Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-07.jpg" alt="Gallery Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-08.jpg" alt="Gallery Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-09.jpg" alt="Gallery Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-10.jpg" alt="Gallery Image 10">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-11.jpg" alt="Gallery Image 11">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-12.jpg" alt="Gallery Image 12">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-13.jpg" alt="Gallery Image 13">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-14.jpg" alt="Gallery Image 14">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-15.jpg" alt="Gallery Image 15">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-16.jpg" alt="Gallery Image 16">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-17.jpg" alt="Gallery Image 17">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-18.jpg" alt="Gallery Image 18">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-19.jpg" alt="Gallery Image 19">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-20.jpg" alt="Gallery Image 20">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-21.jpg" alt="Gallery Image 21">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-22.jpg" alt="Gallery Image 22">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-23.jpg" alt="Gallery Image 23">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-24.jpg" alt="Gallery Image 24">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-25.jpg" alt="Gallery Image 25">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-26.jpg" alt="Gallery Image 26">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/Gallery-Image-27.jpg" alt="Gallery Image 27">
+        </div>
+    </div>
+</section>
+
+<!-- gallery end -->
+ <!-- contact us -->
+ <section id="contactus">
+    <h1 style="font-size: 50px; padding-left: 150px; font-family: 'Arial', sans-serif; font-weight: bold; color: #2C3E50; text-align: center;">
+        Contact Us
+    </h1>
+    <h2 style="font-size: 40px; padding-left: 150px; font-family: 'Arial', sans-serif; font-weight: bold; color: #2C3E50; text-align: center;">
+        Let's Get In Touch
+    </h2>
+    <p style="font-size: 20px; font-family: 'Arial', sans-serif; color: #2C3E50; text-align: center; padding: 10px;">
+        We would love to hear from you. Feel free to reach out to us through any of the channels below!
+    </p>
+    <h6 style="font-size: 20px; padding-left: 150px; font-family: 'Arial', sans-serif; font-weight: bold; color: #2C3E50; text-align: center;">
+        Call us: +44-7473564355
+    </h6>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/ecoradiantenergysolutions/#" class="icon instagram">
+            <img src="./icons/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61569822140393" class="icon facebook">
+            <img src="./icons/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://wa.me/447927789897" class="icon whatsapp">
+            <img src="./icons/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+</section>
+<footer style="background-color: #333; padding: 20px; color: white; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
+        <!-- Company Name and Address -->
+        <h3 style="font-size: 30px; font-family: 'Arial', sans-serif; font-weight: bold; margin: 0;">
+            Eco Radiant Energy Solutions
+        </h3>
+        <p style="margin: 5px 0; font-size: 16px;">
+            97 Ralph Road, Birmingham, England, B8 1NA
+        </p>
+
+
+        <!-- Contact Email -->
+        <p style="margin: 10px 0; font-size: 16px;">
+            Email: <a href="mailto:ecoradiantenergy@gmail.com" style="color: #f4b400; text-decoration: none;">ecoradiantenergy@gmail.com</a>
+        </p>
+
+        <!-- Copyright Notice -->
+        <p style="font-size: 14px; margin-top: 15px;">
+            &copy; 2024 Eco Radiant Energy Solutions. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
